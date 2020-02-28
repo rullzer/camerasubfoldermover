@@ -1,0 +1,9 @@
+[package]
+exclude = [
+    ".git",
+    ".gitignore",
+    "Makefile"
+]
+
+before_cmds = [
+]
