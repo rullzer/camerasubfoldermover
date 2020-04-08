@@ -111,7 +111,7 @@ class Mover extends Command {
 
 		$nodes = $folder->getDirectoryListing();
 		foreach ($nodes as $node) {
-			$target = $parent->getPath() . '/' . $node->getName();
+			$target = $parent->getPath() . '/' . $folder->getName() . '-' . $node->getName();
 
 			if (!$parent->nodeExists($node->getName())) {
 				$node->move($target);
